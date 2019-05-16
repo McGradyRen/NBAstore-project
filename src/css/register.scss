@@ -1,0 +1,27 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+@import "../libs/bootsrap/css/bootstrap.min.css";
+.form-container{
+    width: 500px;
+    margin: 0 auto;
+}
+.form-container p{
+    color: #515152;
+    font-size: 12px;
+}
+.form-register{
+    margin-top: 40px;
+}
+.form-pass{
+    margin-top: 30px;
+}
+.form-hint{
+    margin-top: 20px;
+}
+.form-btn{
+    margin-top: 25px;
+}
+.form-message{
+    margin-left:20px; 
+}

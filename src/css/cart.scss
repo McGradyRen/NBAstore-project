@@ -1,0 +1,192 @@
+@import "module/base.scss";
+@import "module/header.scss";
+@import "module/footer.scss";
+
+#main-container{
+    width: 100%;
+    height: auto;
+}
+h3{
+    font-weight:bold; 
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+.shop-cart{
+    width: 1200px;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+.shop-cart .shop-cart-head{
+    width: 1200px;
+    height: 50px;
+    background: #949494;
+    display: flex;
+    
+}
+.shop-cart .shop-cart-head .shop-name{
+    width: 550px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #FFF;
+}
+.shop-cart .shop-cart-head .shop-price{
+    width: 615px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #FFF;
+}
+.shop-cart .shop{
+    width: 1200px;
+    height: 150px;
+    border-bottom: 1px solid #e2e4ea;
+    display: flex;
+}
+.shop-cart .shop .shop-data{
+    width: 540px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.shop-cart .shop .shop-data input{
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top:38%;
+    left: 20px;
+}
+.shop-cart .shop .shop-data img{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 18%;
+    left: 50px;
+}
+.shop-cart .shop .shop-data div{
+    width: 350px;
+    height: 100px;
+    position: absolute;
+    top: 11%;
+    left: 155px;
+    font-size: 12px;
+} 
+.shop-cart .shop .shop-data div h5{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.shop-cart .shop .shop-ul{
+    width: 615px;
+    height: 150px;
+    line-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.pdp-qty-box{
+    display: block;
+    margin-left: 43px;
+    margin-top: -35px;
+    position: absolute;
+    top: 90px;
+    left: 120px;
+}
+.qtyBtnL{
+    display: inline-block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin-right: 4px;
+    background: #00539c url(https://static.nbastore.cn/images/common/icons.png) no-repeat -10px -231px;
+    color: #fff;
+    cursor: pointer; 
+}
+.qtyInput{
+    border: 1px solid #808285;
+    display: inline-block;
+    float: left;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    line-height: 34px;
+    text-align: center;
+    box-sizing: content-box;
+}
+.qtyBtnR{
+    display: inline-block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    background: #00539c url(https://static.nbastore.cn/images/common/icons.png) no-repeat -66px -231px;
+    margin-left: 4px;
+    color: #fff;
+    cursor: pointer; 
+}
+#main-container .allcheck{
+    width: 80px;
+    margin-left: 6%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#main-container .allcheck input{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+#main-container .allcheck span{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+#main-container .shop-calc{
+    width: 1200px;
+    height: 150px;
+    margin-left: 5%;
+    position: relative;
+}
+#main-container .calc{
+    width: 350px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+}
+#main-container .calc .total{
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    font-size:18px;
+    font-weight:bold; 
+    color: #00539c; 
+    display: flex;
+    justify-content: space-between;
+}
+#main-container .calc .settle{
+    display: flex;
+    width: 350px;
+    height: 50px;
+    margin-top: 20px;
+    font-weight:bold; 
+    display: flex;
+    justify-content: space-between;
+}
+#main-container .calc .settle button{
+    width: 155px;
+    color: #fff;
+    background: #00539c;
+    border: none;
+    outline: none;
+}

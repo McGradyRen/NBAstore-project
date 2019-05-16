@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NBAstore-购物车</title>
+    <link rel="stylesheet" href="/libs/bootsrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header-container"></header>
+    <!-- 主要内容 -->
+    <main id="main-container">
+        <h3>购物车</h3>
+        <div class="shop-cart">
+            <div class="shop-cart-head">
+                <div class="shop-name">NBA产品</div>
+                <ul class="shop-price">
+                    <li>价格</li>
+                    <li>数量</li>
+                    <li>总计</li>
+                    <li>删除</li>
+                </ul>
+            </div>
+            <!-- 商品内容容器 -->
+            <div id="cart-container"> 
+
+            </div>
+            <script type="text/html" id="cart-template">
+                {{each cart data}}
+                <div class="shop" >
+                    <div class="shop-data">
+                            <input type="checkbox" class="son-check" data-checked="{{data.checked}}"/>
+                            <img src="{{data.images[3]}}"/>
+                            <div>
+                                <h5>NBA-Nike 火箭队 哈登 男子 运动短袖T裇870777-013</h5>
+                                <span>商品编号：{{data.number}}</span><br>
+                                <span>尺寸：L</span><br>
+                                <span>颜色:图片色</span>
+                            </div>
+                    </div>
+                    <ul class="shop-ul">
+                        <li>￥{{data.price}}</li>
+                        <li>
+                            <div class="pdp-qty-box" id="num-box">
+                                <a class="qtyBtnL" data-id="{{data.id}}"></a>
+                                <input class="qtyInput" type="text" value="{{data.num}}" id="buyCount"/>
+                                <a class="qtyBtnR" data-id="{{data.id}}"></a>
+                            </div>
+                        </li>
+                        <li class="allm">￥{{(data.price*data.num).toFixed(2)}}</li>
+                        <li class="delBtn" data-id="{{data.id}}">X</li>
+                    </ul>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+        <div class="allcheck">
+            <input type="checkbox" class="whole-check"/><span>全选</span>
+        </div>
+        <div class="shop-calc">
+            <div class="calc">
+                <div class="total">
+                    <span>订单总计</span>
+                    <span id="calcmoney"></span>
+                </div>
+                <div class="settle">
+                    <button>结算</button>
+                    <button style="background:#fff; color: #00539c;border: 2px solid #00539c;">继续购物</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <!-- 尾部 -->
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/cart"></script>
+</body>
+</html>

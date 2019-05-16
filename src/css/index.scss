@@ -1,0 +1,135 @@
+@import "module/base.scss";
+@import "module/footer.scss";
+@import "module/header.scss";
+
+.main{
+  height: auto;
+}
+.main .slideshow{
+  width: 1349px;
+}
+.main .slideshow .swiper-wrapper img{
+  width: 1349px;
+}
+.main .team-form .team{
+  border: none;
+  border-top: 1px solid;
+  height: 30px;
+  width: 1200px;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+.main .team-form .team legend{
+  border: none;
+  width: 120px;
+  margin: 0;
+  margin-left: 45%;
+  padding-left: 7px;
+  font-size: 18px;
+}
+.main .team-logo{
+  width: 1170px;
+  height: 150px;
+  margin-left: 6%;
+  margin-top: 10px;
+  background: url(/images/team-logo.png) no-repeat right center;
+}
+.main .team-logo .team-logo-ul{
+  width: 1080px;
+  height: 60px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .team-logo .team-logo-ul li{
+  width: 60px;
+  height: 60px;
+}
+.main .team-logo .team-logo-ul li a img{
+  width: 60px;
+  height: 60px;
+}
+.main .shopclass{
+  width: 1200px;
+  height: 845px;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+.main .shopclass .shopclass-ul{
+  width: 1200px;
+  height: 680px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .shopclass .shopclass-ul li{
+  width: 590px;
+  height: 320px;
+ 
+}
+.main .shopclass .shopclass-ul li img{
+  width: 590px;
+  height: 320px;
+}
+.main .shopclass .shop-pre-ul{
+  width: 1200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .shopclass .shop-pre-ul li{
+  width: 590px;
+  height: 150px;
+}
+.main .shopclass .shop-pre-ul li a img{
+  width: 590px;
+  height: 150px;
+}
+.main .shop-logo{
+  width: 1200px;
+  height: 125px;
+  margin-left: 5%;
+  margin-top: 15px;
+}
+.main .shop-logo-ul{
+  width: 785px;
+  height: 125px;
+  margin-left: 17%;
+  display: flex;
+  justify-content: space-between;
+  line-height: 150px;
+}
+.main .shop-logo-ul li a img{
+  width: 130px;
+  height: 125px;
+}
+
+.shop-list-menu{
+  width: 950px;
+  height: 270px;
+  margin-top: 20px;
+}
+.shop-list-menu .shop-details{
+  width: 950px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+}
+.shop-list-menu .shop-details li{
+  width: 170px;
+  height: 270px;
+}
+.shop-list-menu .shop-details li a{
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  margin-bottom: 10px;
+}
+.shop-list-menu .shop-details li a img{
+  width: 170px;
+  height: 170px;
+}
+.shop-list-menu .shop-details li p{
+  font-size: 14px;
+}
+

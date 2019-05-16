@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NBAstore-火箭队详情页</title>
+    <link rel="stylesheet" href="/libs/bootsrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header id="header-container"></header>
+    <!-- 主要内容 -->
+    <main class="main">
+        <a href="/html/list.html"><img src="http://static.nbastore.cn/resources/ckimg/images/%E7%90%83%E9%98%9Fbanner/%E8%A5%BF%E9%83%A82/%E7%81%AB%E7%AE%AD.jpg" style="width: 100%"></a>
+        <div class="list">
+            <div class="option-list">
+                <h4>分类</h4>
+                <ul class="list-op">
+                    <li><a href="/html/list.html">所有球衣</a></li>
+                    <li><a href="/html/list.html">上装</a></li>
+                    <li><a href="/html/list.html">配件</a></li>
+                    <li><a href="/html/list.html">篮球</a></li>
+                    <li><a href="/html/list.html">限量商品</a></li>
+                    <li><a href="/html/list.html">鞋子</a></li>
+                    <li><a href="/html/list.html">女子</a></li>
+                    <li><a href="/html/list.html">儿童</a></li>
+                    <li><a href="/html/list.html">品牌</a></li>
+                    <li><a href="/html/list.html">下装</a></li>
+                    <li><a href="/html/list.html">所有商品</a></li>
+                </ul>
+            </div>
+            
+            <div class="shop-list">
+               <div class="shop-menu">
+                    <select class="menu">
+                        <option value="">按新品</option>
+                        <option value="">安热销</option>
+                        <option value="">按价格(低-高)</option>
+                        <option value="">按价格(高-低)</option>
+                        <option value="">按折扣(高低)</option>
+                    </select>
+                    <select class="menu-shop">
+                        <option value="">每页50件商品</option>
+                        <option value="">每页30件商品</option>
+                        <option value="">每页20件商品</option>
+                        <option value="">每页10件商品</option>
+                    </select>
+               </div>
+               <div class="shop-list-menu" id="shopItem">
+                        
+               </div>
+               <script type="text/html" id="list-template">
+                    <ul class="shop-details">
+                        {{each list item}}
+                        <li>
+                            <a href="/html/detail.html?id={{item.id}}"><img src="{{item.image}}"></a>
+                            <p>{{item.title}}</p>
+                            <p>￥{{item.price}}</p>
+                        </li>
+                        {{/each}}
+                    </ul>
+               </script>
+               <div class="shop-list-menu" id="list-shopItem">
+                    
+               </div>
+               <script type="text/html" id="shoplist-template">
+                    <ul class="shop-details">
+                        {{each list item}}
+                        <li>
+                            <a href="/html/detail.html"><img src="{{item.image}}"></a>
+                            <p>{{item.title}}</p>
+                            <p>￥{{item.price}}</p>
+                        </li>
+                        {{/each}}
+                    </ul>
+               </script>
+            </div>
+        </div>
+    </main>
+    <!-- 尾部 -->
+    <footer id="footer-container"></footer>
+    <script src="/libs/requirejs/require.js" data-main="/js/list"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+.header{
+    width: 100%;
+    height: 125px;
+    min-width: 1140px;
+    background: #0a3665;
+    position: relative;
+}
+.header-ul{
+    width: 400px;
+    height: 16px;
+    margin-top: 10px;
+    position: absolute;
+    right:5%;
+    display: flex;
+    justify-content:space-between;
+}
+.header-ul li{
+    width: 80px;
+    text-align: center;
+    height: 14px;
+    line-height: 11px;
+    border-right: 1px solid #fff;
+}
+.header-ul li:last-child{
+    border: none;
+}
+.header-ul .num{
+    display: inline-block;
+    color: #fff;
+    width: 20px;
+    height: 15px;
+    line-height: 15px;
+    margin-left: 5px;
+    background: red;
+    border-radius: 16px;
+}
+.header-ul li a{
+    color: #fff;
+    font-size: 12px;
+}
+.header .logo-img{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+.header .search{
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    width: 570px;
+}
+.header .shop-ul{
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top:60%;
+    right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.header .shop-ul li a{
+    color: #fff;
+    font-size: 18px;
+}
+.shop-nav{
+    width: 100%;
+    height: 35px;
+    background-color: #0669b2;
+    position: relative;
+}
+.shop-option{
+     width: 85%;
+     height: 35px;
+     position: absolute;
+     left: 5%;
+     display: flex;
+     justify-content: space-around;
+     
+}
+.shop-option li{
+    line-height: 35px;
+}
+.shop-option li:hover a{
+    color: red;
+}
+.shop-option img{
+    width: 60px;
+    height: 25px;
+}
+.shop-option li a{
+    color: #fff;
+    font-size: 14px;
+}
+.ad-img{
+    width: 100%;
+    height: 34px;
+}
+.ad-img a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: url(../images/15294641645532316.png) no-repeat 45% 100%;
+}
+.header-ul #after-login,.header-ul #exit{
+    display: none;
+    color: #fff;
+    font-size: 12px;
+}
+.input-group #search-ul{
+    width: 200px;
+    height: 100px;
+    border: 1px solid red;
+    background: #fff;
+    position: absolute;
+    top:100%;
+    display: none;
+}
+.search .search-icon{
+    height: 20px;
+}

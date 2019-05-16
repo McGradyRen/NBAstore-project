@@ -1,0 +1,141 @@
+@import "module/base.scss";
+@import "module/footer.scss";
+@import "module/header.scss";
+
+.main .shirt-ul{
+    width: 135px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.main .shirt-ul .Hteam a{
+    color: #505050;
+}
+.main .shop-detail{
+    width: 1240px;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.main .shop-detail .s-img{
+    width: 100px;
+    height: 500px;
+}
+.main .shop-detail .m-img,.main .shop-detail .m-img img{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #b4b4b4;
+}
+
+.main .shop-detail .intro{
+    width: 595px;
+    height: 500px;
+}
+.main .shop-detail .s-img .s-img-ul{
+    width: 100px;
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .shop-detail .s-img .s-img-ul li{
+    width: 90px;
+    height: 90px;
+    border: 1px solid #b4b4b4;
+}
+.main .shop-detail .s-img .s-img-ul li img{
+    width: 88px;
+    height: 88px;
+}
+.main .intro .select{
+    width: 595px;
+    height: 365px;
+    border-top: 1px solid #b4b4b4;
+    border-bottom: 1px solid #b4b4b4;
+}
+.select-t{
+    margin-top: 20px;
+}
+.main .intro .select .select-ul{
+    width: 450px;
+    height: 35px;
+    margin-left: 40px;
+    margin-top: -27px;
+    display: flex;
+    justify-content: space-between;
+}
+.main .intro .select .select-ul li{
+    width: 60px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #b4b4b4;
+}
+.mbtn{
+    width: 370px;
+    height: 50px;
+    margin-top: 55px;
+}
+.mbtn button{
+    width: 165px;
+    height: 50px;
+    margin-right: 10px;
+    background-color:#ec003d;
+    border: none;
+    color: #fff;
+    border-radius:5px;
+}
+.pdp-add-text{
+    width: 595px;
+    height: 115px;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.pdp-mado-title{
+    width: 50px;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 10px;
+}
+.pdp-qty-box{
+    display: block;
+    margin-left: 43px;
+    margin-top: -35px;
+}
+.qtyBtnL{
+    display: inline-block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin-right: 4px;
+    background: #00539c url(https://static.nbastore.cn/images/common/icons.png) no-repeat -10px -231px;
+    color: #fff;
+    cursor: pointer; 
+}
+.qtyInput{
+    border: 1px solid #808285;
+    display: inline-block;
+    float: left;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    line-height: 34px;
+    text-align: center;
+    box-sizing: content-box;
+}
+.qtyBtnR{
+    display: inline-block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    background: #00539c url(https://static.nbastore.cn/images/common/icons.png) no-repeat -66px -231px;
+    margin-left: 4px;
+    color: #fff;
+    cursor: pointer; 
+}

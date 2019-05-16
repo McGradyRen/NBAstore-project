@@ -1,0 +1,99 @@
+@import "module/base.scss";
+@import "module/footer.scss";
+@import "module/header.scss";
+
+.main{
+  width: 100%;
+  height: auto;
+}
+.main .list{
+    width: 1255px;
+    height: 700px;
+}
+.main .option-list{
+    width: 260px;
+    height: 700px;
+    background: #393f48;
+    float: left;
+}
+.main .option-list h4{
+    display: inline-block;
+    color: #fff;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.main .option-list .list-op{
+    width: 200px;
+    height: 500px;
+    border-top: 1px solid #5e646c;
+    margin-left: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.main .option-list .list-op li a{
+    color: #fff;
+}
+.main .shop-list{
+    min-width: 950px;
+    height: 700px;
+    margin-left: 45px;
+    float: left;
+   
+}
+.main .list .shop-list .shop-menu{
+    min-width: 950px;
+    display: flex;
+    justify-content: space-between;
+}
+.main .list .menu,.menu-shop{
+    width: 150px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 15px;
+    cursor: pointer;  
+    outline: none; 
+    margin-top: 20px;
+    padding-left:20px; 
+    border-color: #a7a9ac;
+    appearance:none;  
+    -moz-appearance:none;  
+    -webkit-appearance:none;
+    background: url("https://img-blog.csdn.net/20180903162343300?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L25pc2hpd29kZWJvY2FpMjE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70") no-repeat right center;
+}
+.main .list .menu-shop{
+    width: 200px;
+  
+}
+.main .list #menu option{
+    font-size: 14px;
+    color: #999;
+}
+.shop-list-menu{
+    min-width: 950px;
+    height: 270px;
+    margin-top: 20px;
+}
+.shop-list-menu .shop-details{
+    min-width: 950px;
+    display: flex;
+    justify-content: space-between;
+}
+.shop-list-menu .shop-details li{
+    width: 170px;
+    height: 270px;
+}
+.shop-list-menu .shop-details li a{
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin-bottom: 10px;
+}
+.shop-list-menu .shop-details li a img{
+    width: 170px;
+    height: 170px;
+}
+.shop-list-menu .shop-details li p{
+    font-size: 14px;
+}
