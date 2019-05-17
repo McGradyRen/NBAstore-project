@@ -56,7 +56,7 @@ require(['require.config'], () =>{
                     cart[index].num = value;
                     localStorage.setItem('cart',JSON.stringify(cart));
                     header.calcCartNum();
-                    $(this).parents(".shop-ul").find('.allm').html((value*cart[index].price).toFixed(2));
+                    $(this).parents(".shop-ul").find('.allm').html('￥' + (value*cart[index].price).toFixed(2));
                     _this.calcMoney ();
                 });
                 //减少按钮
@@ -84,7 +84,7 @@ require(['require.config'], () =>{
                     }
                     localStorage.setItem('cart',JSON.stringify(cart));
                     header.calcCartNum();
-                    $(this).parents(".shop-ul").find('.allm').html((value*cart[index].price).toFixed(2));
+                    $(this).parents(".shop-ul").find('.allm').html('￥'+ (value*cart[index].price).toFixed(2));
                     _this.calcMoney ();
                 });
                 
@@ -121,7 +121,7 @@ require(['require.config'], () =>{
                 cart = JSON.parse(cart);
                 $(".son-check").each(function(){
                     $(this).click(function(){
-                        console.log(cart);
+                        //console.log(cart);
                         if($(this).prop("checked")){
                             cart.forEach(function(data){
                                 data.checked = true;
@@ -164,7 +164,7 @@ require(['require.config'], () =>{
                         if($(this).prop("checked") == true){
                             let money = Number($(this).parents('.shop').find('.allm').html().substring(1));
                             allmoney += money;
-                            // console.log($(this).parents().find('.allm').html().substring(1));
+                            //console.log($(this).parents().find('.allm').html().substring(1));
                         } 
                 });
                 $('#calcmoney').html('￥' + allmoney.toFixed(2));
