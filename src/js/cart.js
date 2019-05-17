@@ -39,7 +39,7 @@ require(['require.config'], () =>{
                 let _this = this;
                 //增加按钮
                 $("#cart-container").on("click",".qtyBtnR", function() {
-                    let value = Number($(this).prev().val());
+                    let value = $(this).prev().val();
                     value++;
                     $(this).prev().val(value);
                     if(value > 1){
@@ -61,7 +61,7 @@ require(['require.config'], () =>{
                 });
                 //减少按钮
                 $("#cart-container").on("click",".qtyBtnL",function(){
-                    let value = Number($(this).next().val());
+                    let value = $(this).next().val();
                     value--;
                     $(this).next().val(value);
                     if(value < 1){
@@ -162,9 +162,9 @@ require(['require.config'], () =>{
                 sonCheckBtn.each(function(){
                         //console.log($(this).prop("checked"));
                         if($(this).prop("checked") == true){
-                            let money = Number($(this).parents('.shop').find('.allm').html().substring(0));
+                            let money = Number($(this).parents('.shop').find('.allm').html().substring(1));
                             allmoney += money;
-                            console.log(allmoney);
+                            // console.log($(this).parents().find('.allm').html().substring(1));
                         } 
                 });
                 $('#calcmoney').html('￥' + allmoney.toFixed(2));
