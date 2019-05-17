@@ -4,6 +4,7 @@ require(['require.config'], () =>{
             constructor(){
                 this.init();
                 this.count = 0;
+                
             }
             init(){
                 let cart = localStorage.getItem('cart');
@@ -16,6 +17,7 @@ require(['require.config'], () =>{
                     this.click();
                     this.calcMoney();
                     this.wholeCheck();
+                    this.change();
                 }else{
                     //提示购物车为空
                     alert("购物车为空");
@@ -145,15 +147,30 @@ require(['require.config'], () =>{
                     this.count++;
                   }
                 })
-                $('.son-check').length == this.count ? $('.whole-check').prop("checked",true) : $('.whole-check').prop("checked",false);
+                $('.son-check').length == this.count ? $('#allcheckbox').prop("checked",true) : $('#allcheckbox').prop("checked",false);
             }
-        //     $('.wholi-check').click(function(){
-        //         if($(this).prop('checked')){
-        //            $('.son-check').prop('checked',true);
-        //         }else{
-        //            $('.son-check').prop('checked',false);
-        //         }
-        //    })
+            
+            change(){
+                let _this = this;
+                let cart =localStorage.getItem('cart');
+                cart = JSON.parse(cart);
+                let allcheck = $('#allcheckbox');
+                allcheck.click(function(){
+                    if($(this).prop('checked')){
+                       $('.son-check').prop('checked',true);
+                       cart.forEach(function(data){
+                        data.checked = true;
+                        _this.calcMoney();
+                        })
+                    }else{
+                       $('.son-check').prop('checked',false);
+                       cart.forEach(function(data){
+                        data.checked = false;
+                        _this.calcMoney();
+                        })
+                    }
+               })
+            }
 
             //计算总价
             calcMoney (){
